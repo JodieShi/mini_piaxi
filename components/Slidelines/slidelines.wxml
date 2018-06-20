@@ -1,0 +1,13 @@
+<!--components/Slidelines/slidelines.wxml-->
+<!-- <text>components/Slidelines/slidelines.wxml</text> -->
+<view class="px_slidelines">
+  <view class="px-lines">
+    <block wx:for="{{lines}}" wx:for-item="line">
+      <input class="weui-input" value="{{line.text}}" 
+      bindinput='{{bindKeyInput(line.number)}}' disabled='{{!editable}}'/>
+    </block>
+  </view>
+  <view class="px-control">
+    
+  </view>
+</view>
